@@ -1,0 +1,32 @@
+<div class="topannun">
+    <a href="https://www.sparksfpublicschools.org/donate">
+    <p class="announcement-bar__message">All proceeds will be donated to SF Public Schools for COVID-19 relief</p></a>
+</div>
+
+<header class="header clearfix" role="banner">
+    <a href="#" class="mobileMenu-toggle" data-mobile-menu-toggle="menu">
+        <span class="mobileMenu-toggleIcon">Toggle menu</span>
+    </a>
+    <div class="headerall">
+      <div class="topnavigation">
+        {{> components/common/navigation}}
+    </div>
+        <div class="mainlogo">
+            {{#if page_type '===' 'default'}}
+        <h1 class="header-logo header-logo--{{theme_settings.logo-position}}">
+            {{> components/common/store-logo}}
+        </h1>
+        {{else}}
+            <div class="header-logo header-logo--{{theme_settings.logo-position}}">
+                {{> components/common/store-logo}}
+            </div>
+        {{/if}}
+    </div>
+    <div class="navPages-container mainmenu" id="menu" data-menu>
+        {{> components/common/navigation-menu}}
+    </div>
+
+    </div>
+
+</header>
+{{{region name="header_bottom"}}}
