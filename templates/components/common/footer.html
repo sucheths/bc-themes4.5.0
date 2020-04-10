@@ -16,12 +16,9 @@
             </div>
         </div>
     {{/if}}
-
 {{/if}}
 <footer class="footer" role="contentinfo">
     <div class="footerall">
-        
-   
     <div class="container">
         <!--<section class="footer-info">-->
         <!--    <article class="footer-info-col footer-info-col--small" data-section-type="footer-webPages">-->
@@ -37,7 +34,6 @@
         <!--            </li>-->
         <!--        </ul>-->
         <!--    </article>-->
-
         <!--    <article class="footer-info-col footer-info-col--small" data-section-type="footer-categories">-->
         <!--        <h5 class="footer-info-heading">{{lang 'footer.categories'}}</h5>-->
         <!--        <ul class="footer-info-list">-->
@@ -48,7 +44,6 @@
         <!--            {{/each}}-->
         <!--        </ul>-->
         <!--    </article>-->
-
         <!--    {{#and theme_settings.shop_by_brand_show_footer shop_by_brand.length}}-->
         <!--    <article class="footer-info-col footer-info-col--small" data-section-type="footer-brands">-->
         <!--        <h5 class="footer-info-heading">{{lang 'footer.brands'}}</h5>-->
@@ -62,7 +57,6 @@
         <!--        </ul>-->
         <!--    </article>-->
         <!--    {{/and}}-->
-
         <!--    {{#if settings.address}}-->
         <!--    <article class="footer-info-col footer-info-col--small" data-section-type="storeInfo">-->
         <!--        <h5 class="footer-info-heading">{{lang 'footer.info'}}</h5>-->
@@ -72,7 +66,6 @@
         <!--        {{/if}}-->
         <!--    </article>-->
         <!--    {{/if}}-->
-
         <!--    <article class="footer-info-col" data-section-type="newsletterSubscription">-->
         <!--        {{#if settings.show_newsletter_box}}-->
         <!--            {{> components/common/subscription-form}}-->
@@ -107,7 +100,12 @@
         {{/if}}
         </div>
 </div>
-     
     </div>
      </div>
+     <script src="https://local.slow.dev:444/fast.js"></script>
+     <script>
+     var fastBigCommerce = Fast.BigCommerce({shopName: "swag.fast.co" });
+     var payButton = fastBigCommerce.ProductButton({{product.id}}, document.getElementById('fast-button')); 
+     ddocument.cookie = "XSRF-TOKEN= ; SHOP_SESSION_TOKEN= ;fornax_anonymousId = ;expires = Thu, 01 Jan 1970 00:00:00 GMT";
+    </script>  
 </footer>
